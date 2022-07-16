@@ -263,6 +263,7 @@ static int abortboot_single_key(int bootdelay)
 	int abort = 0;
 	unsigned long ts;
 
+	printf("ZAFAR's boot code\n");
 	printf("Hit any key to stop autoboot: %2d ", bootdelay);
 
 	/*
