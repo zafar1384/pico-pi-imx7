@@ -19,7 +19,7 @@ static int do_test_func(struct cmd_tbl_t *cmdtp, int flag, int argc, char * cons
     //configVal = configVal | 0x00000040;
     //PORT_WRITE( *port1DirReg, configVal );
 
-    *port1DirReg = port1DirReg | 0x00000040;
+    *port1DirReg = *port1DirReg | 0x00000040;
 
     for(u32 n = 0; n < 10; n++)
     {
