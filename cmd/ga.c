@@ -4,7 +4,7 @@
 
 
 
-static int do_test_func(cmd_tbl_t * cmdtp, int flag, int argc, char * const argv[]) 
+static int do_test_func(struct cmd_tbl_t *cmdtp, int flag, int argc, char * const argv[]) 
 {
 	printf("Testing the customized function\n");
 	return 0;
