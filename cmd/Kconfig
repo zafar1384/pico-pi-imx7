@@ -2352,4 +2352,14 @@ config CMD_UBIFS
 	help
 	  UBIFS is a file system for flash devices which works on top of UBI.
 
+
+menu "GA commands"
+
+config CMD_GA
+        bool "Enable 'GA' command for test"
+        depends on CMDLINE
+        default y
+        help
+          print "Added Customized GA command"
+
 endmenu
