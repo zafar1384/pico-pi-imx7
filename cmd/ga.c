@@ -18,6 +18,7 @@ static int do_test_func(struct cmd_tbl_t *cmdtp, int flag, int argc, char * cons
     configVal = PORT_READ(*port1DirReg);
     configVal = configVal | 0x00000040;
     PORT_WRITE( *port1DirReg, configVal );
+
     for(u32 n = 0; n < 10; n++)
     {
         printf("Toggling the LED...\n");
@@ -25,7 +26,7 @@ static int do_test_func(struct cmd_tbl_t *cmdtp, int flag, int argc, char * cons
         mdelay(2000);
     }
 
-
+    printf("Finished testing LED\n");
 
 
     return 0;
