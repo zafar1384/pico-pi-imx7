@@ -2356,10 +2356,11 @@ config CMD_UBIFS
 menu "GA commands"
 
 config CMD_GA
-        bool "Enable 'GA' command for test"
-        depends on CMDLINE
-        default y
-        help
-          print "Added Customized GA command"
+	bool "Enable 'GA' command for test"
+	depends on CMDLINE
+	default y
+	help
+	  print "Added Customized GA command"
+endmenu
 
 endmenu
